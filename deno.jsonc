@@ -1,0 +1,11 @@
+// This file is configuration for `deno fmt`, formatting .json and .md files
+{
+  "fmt": {
+    "useTabs": false,
+    "indentWidth": 2,
+    "lineWidth": 100,
+    "semiColons": true,
+    "singleQuote": true,
+    "proseWrap": "always"
+  }
+}

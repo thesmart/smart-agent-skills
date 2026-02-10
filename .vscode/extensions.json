@@ -1,0 +1,27 @@
+{
+  // Extensions that VS Code will prompt users to install when opening this workspace
+  "recommendations": [
+    // Deno language server for TypeScript/JavaScript
+    "denoland.vscode-deno",
+
+    // Python support (required for UV-managed projects)
+    "ms-python.python",
+
+    // Ruff - fast Python linter/formatter (works with UV)
+    "charliermarsh.ruff",
+
+    // Spell checking via typos-lsp
+    "tekumara.typos-vscode",
+  ],
+
+  // Extensions that conflict with this workspace's tooling
+  "unwantedRecommendations": [
+    // Conflicts with Deno's built-in formatter
+    "esbenp.prettier-vscode",
+
+    // Replaced by Ruff
+    "ms-python.pylint",
+    "ms-python.flake8",
+    "ms-python.black-formatter",
+  ],
+}
