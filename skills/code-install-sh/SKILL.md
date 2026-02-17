@@ -1,12 +1,11 @@
 ---
-name: install-sh
-description: 'Activate when the user asks to create a shell installer script for downloading pre-built binaries from GitHub Releases. Triggers include: install script, curl pipe sh, binary installer, release installer, download script. Do NOT activate for package manager installers (brew, apt, npm) or language-specific installers (go install, pip install).'
-argument-hint: [github-owner/repo]
+name: code-install-sh
+description: "Activate when the user asks to create a shell installer script for downloading pre-built binaries from GitHub Releases. Triggers: install script, curl pipe sh, download script installer. Do NOT activate for package manager installers (brew, apt, npm) or language-specific installers (go install, pip install)."
 license: MIT
 compatibility: Designed for Claude Code (and compatible)
 metadata:
-  author: thesmart
-  version: '1.0'
+    author: thesmart
+    version: "1.0"
 ---
 
 # Install Shell Script Generator
@@ -215,14 +214,14 @@ Only add OS/arch cases that the project actually builds for. Check the project's
 ## Instructions
 
 1. Read the project's build configuration to determine:
-   - Which platforms are built (OS/arch combinations)
-   - How release assets are named
-   - Whether assets are raw binaries or compressed archives
+    - Which platforms are built (OS/arch combinations)
+    - How release assets are named
+    - Whether assets are raw binaries or compressed archives
 2. Identify the GitHub `owner/repo` and binary name.
 3. Write `install.sh` at the project root using the template, adapted for the project's conventions.
 4. Make the script executable: `chmod +x install.sh`
 5. Update the project's README with install instructions:
-   ```sh
-   curl -fsSL https://raw.githubusercontent.com/<REPO>/main/install.sh | sh
-   ```
+    ```sh
+    curl -fsSL https://raw.githubusercontent.com/<REPO>/main/install.sh | sh
+    ```
 6. Test by running `sh install.sh` locally.
