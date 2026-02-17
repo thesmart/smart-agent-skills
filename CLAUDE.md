@@ -15,8 +15,8 @@ Each skill or meta-skill is self-contained in its own directory with a `SKILL.md
 
 ## Progressive Disclosure -- Read Only What You Need
 
-**Do NOT eagerly read files in subdirectories.** This repository contains many context files,
-syntax specs, and examples that are expensive to load. Follow this protocol:
+**Do NOT eagerly read files in subdirectories.** This repository contains many context files, syntax
+specs, and examples that are expensive to load. Follow this protocol:
 
 1. Start here. This file tells you the project structure and conventions.
 2. Read [CONTRIBUTING.md](CONTRIBUTING.md) only when creating a new skill or making structural
@@ -28,8 +28,8 @@ syntax specs, and examples that are expensive to load. Follow this protocol:
 ## Skill Anatomy
 
 Every skill has a `SKILL.md` with YAML frontmatter (`name`, `description`, `argument-hint`,
-`license`, `metadata`) followed by markdown instructions. See [CONTRIBUTING.md](CONTRIBUTING.md)
-for the full spec.
+`license`, `metadata`) followed by markdown instructions. See [CONTRIBUTING.md](CONTRIBUTING.md) for
+the full spec.
 
 ## Formatting and Quality
 

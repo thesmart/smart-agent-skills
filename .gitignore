@@ -2,5 +2,4 @@
 Thumbs.db
 **/node_modules
 *.env
-./plans
-./claude
+.claude

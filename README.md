@@ -26,11 +26,13 @@ compact, BNF-grounded context specifications (CSpecs) that the `diagram` skill c
 End-user skill live in [skills/](skills/) and are installed into `~/.claude/skills/` via the
 provided `install.sh` script.
 
-Currently a modest list of one skill. 😅
-
-| Skill                      | Description                                                                                                                                                                                                                        | Install                       | Example Output                                                              |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------- |
-| [diagram](skills/diagram/) | Create diagrams, charts, and visualizations directly in Markdown using [Mermaid](https://mermaid.js.org). Supports 19 diagram types including flowcharts, sequence diagrams, ER diagrams, C4 architecture, Gantt charts, and more. | `./skills/install.sh diagram` | [PostgreSQL connection resolution flowchart](./examples/postgresql-params/) |
+| Skill                                      | Description                                                                                                                                                                                                               | Install                               |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
+| [diagram](skills/diagram/)                 | Create diagrams, charts, and visualizations in Markdown using [Mermaid](https://mermaid.js.org). Supports 19 diagram types including flowcharts, sequence diagrams, ER diagrams, C4 architecture, Gantt charts, and more. | `./skills/install.sh diagram`         |
+| [code-shields-io](skills/code-shields-io/) | Generate [shields.io](https://shields.io) badge URLs for READMEs and docs. Supports static, dynamic (JSON/XML/YAML/TOML), and endpoint badges with full query parameter and color reference.                              | `./skills/install.sh code-shields-io` |
+| [code-install-sh](skills/code-install-sh/) | Generate POSIX-compatible `curl \| sh` installer scripts for downloading pre-built binaries from GitHub Releases.                                                                                                         | `./skills/install.sh code-install-sh` |
+| [code-shell](skills/code-shell/)           | Write portable, well-structured POSIX `sh` shell scripts with [getoptions](https://github.com/ko1nksm/getoptions) argument parsing, `--help` generation, and validation.                                                  | `./skills/install.sh code-shell`      |
+| [learn-skills](skills/learn-skills/)       | Teaches agents how to author new Claude Code skills with proper frontmatter, token-efficient context, progressive disclosure, and validation steps.                                                                       | `./skills/install.sh learn-skills`    |
 
 ## Meta-Skills (Root)
 
